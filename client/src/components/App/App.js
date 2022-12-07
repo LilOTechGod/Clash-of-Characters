@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import styles from './styles.moduel.css'
+//import styles from './styles.module.css'
 import { StartMenu, Battle, Endmenu } from 'components';
 
 export const App = () => {
