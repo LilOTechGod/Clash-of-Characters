@@ -1,5 +1,2 @@
-export * from './App';
-export * from './Battle';
-export * from './Endmenu';
-export * from './StartMenu';
-
+export * from './App'
+export * from './StartMenu'
