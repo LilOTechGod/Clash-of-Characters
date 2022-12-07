@@ -1,9 +1,15 @@
-
-
-charImages {
-    background-color: black;
+.bg2 {
+   
+    width: 100%;
 }
 
-selectBtn {
-    color: red;
+.secondbg {
+    width:100%;
+    height: 100vh;
+}
+
+#srtButton {
+    position: sticky;
+    top: 50%;
+    left: 30%;
 }

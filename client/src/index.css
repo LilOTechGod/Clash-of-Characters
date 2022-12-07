@@ -15,6 +15,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: url(../src/assets/oak_woods_v1.0/background/background_layer_1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:100vh;
 }
 
 code {
