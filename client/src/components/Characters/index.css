@@ -1,0 +1,12 @@
+/* .flyeyeImage {
+    height: 150px;
+    width: 150px;
+  background: 
+  url('../../assets/Monsters/FlyingEye/Flight.png') 0px 0px;
+} */
+
+.selectBtn {
+    position: sticky;
+    top: 50%;
+    left: 30%;
+}

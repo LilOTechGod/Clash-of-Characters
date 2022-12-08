@@ -1,42 +1,48 @@
-import {selectBtn, charImages} from './index.css';
+import {selectBtn} from './index.css';
+import Animator from './Animator';
 
-export const CharSelection = () => {
+const Characters = () => {
 
     const charList = [
         {
             id: 1,
-            link: "flyEye",
-            url: "../assets/Monsters/FlyingEye/Flight.png"
+            link: "flyEyeImage",
+            url: "../../assets/Monsters/FlyingEye/Flight.png"
         },
         {
             id: 2,
-            link: "goblin",
+            link: "goblinImage",
             url: "../assets/Monsters/Goblin/Idle.png"
         },
         {
             id: 3,
-            link: "mushroom",
+            link: "mushroomImage",
             url: "../assets/Monsters/Mushroom/Idle.png"
         },
         {
             id: 4,
-            link: "skeleton",
+            link: "skeletonImage",
             url: "../assets/Monsters/Skeleton/Idle.png"
         }
     ]
 
     return (
-        <div className={styles.main}>
-            <ul className="flex col=lg-3">
-                {charList.map(({id, link}) => (            
-                <li key={id} className={charImages} src={url} alt={link}> 
-                    {link} 
-                </li>
-                ))}
-            </ul>
-            <button className={selectBtn}>
-                Select
-            </button>
+        <div>
+            <div className="character">
+                <ul className="flex col-lg-3">
+                    {charList.map(({id, link, url}) => (            
+                    <li key={id} className={link}> 
+                        <img src={url} alt={link}/>
+                    </li>
+                    ))}
+                    <Animator/>
+                </ul>
+                <button className={selectBtn}>
+                    Select
+                </button>
+        </div>
         </div>
     );
 };
+
+export default Characters;
