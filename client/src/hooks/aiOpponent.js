@@ -1,7 +1,7 @@
 //importing 
 import { useEffect, useState } from "react";
 
-export const aiOpponent = turn => {
+const aiOpponent = turn => {
     const [aiChoice, setAIChoice] = useState('');
 
     useEffect(() => {
@@ -12,3 +12,5 @@ export const aiOpponent = turn => {
     }, [turn]);
     return aiChoice;
 };
+
+export default aiOpponent;
