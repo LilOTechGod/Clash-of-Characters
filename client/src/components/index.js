@@ -1,2 +1,7 @@
 export * from './App'
 export * from './StartMenu'
+export * from './Battle'
+export * from './Characters'
+export * from './Endmenu'
+export * from './Header'
+export * from './pages'
