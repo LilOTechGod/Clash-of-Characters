@@ -1,3 +1,4 @@
+
 export const onattack = ({ attacker, receiver }) => {
     const receivedDamage = attacker.attack - (attacker.level - receiver.level) * 1.00;
 
