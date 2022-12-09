@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
-import styles from './index.css'
+import './index.css'
 import { StartMenu } from './components/StartMenu/StartMenu.js';
 import Login from './components/pages/Login';
 import Signup from './components/pages/Signup';
