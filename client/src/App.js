@@ -6,7 +6,7 @@ import Login from './components/pages/Login';
 import Signup from './components/pages/Signup';
 import Header from './components/Header/index';
 import BattleScreen from './components/BattleScreen/BattleScreen';
-
+import Canvas from "./components/BattleScreen/Canvas/Canvas"
 
 import {
   ApolloClient,
@@ -63,6 +63,7 @@ function App() {
               <Route 
                 path="/battleScreen" 
                 element={<BattleScreen />}
+
               />
               
             </Routes>
