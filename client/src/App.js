@@ -5,6 +5,7 @@ import { StartMenu } from './components/StartMenu/StartMenu.js';
 import Login from './components/pages/Login';
 import Signup from './components/pages/Signup';
 import Header from './components/Header/index';
+import CharacterSelect from './components/CharacterSelect/Characters';
 import BattleScreen from './components/BattleScreen/BattleScreen';
 
 
@@ -45,11 +46,14 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         <div className="flex-column justify-flex-start min-100-vh">
-          <Header />
           <div className="container">
             <Routes>
               <Route 
                 path="/"
+                element={<Header/>}
+              />
+              <Route 
+                path="/start"
                 element={<StartMenu />}
               />
               <Route 
@@ -59,6 +63,10 @@ function App() {
               <Route 
                 path="/signup" 
                 element={<Signup />}
+              />
+              <Route
+                path="/characterSelect"
+                element={<CharacterSelect />}
               />
               <Route 
                 path="/battleScreen" 
