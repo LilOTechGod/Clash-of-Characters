@@ -13,7 +13,7 @@ export const StartMenu = () => {
                 Start Game
             </button>
             <div className='bg2'>
-                <img src={BG} className='secondbg'></img>
+                <img src={BG} className='secondbg' alt="background-of-trees"></img>
             </div>
         </div>
     );

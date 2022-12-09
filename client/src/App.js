@@ -1,5 +1,4 @@
 import React from 'react'
-import { useState, useEffect } from 'react';
 import './index.css'
 import { StartMenu } from './components/StartMenu/StartMenu.js';
 import Login from './components/pages/Login';
