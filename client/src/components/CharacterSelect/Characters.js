@@ -1,54 +1,55 @@
 import {selectBtn} from './index.css';
+import {SpriteAnimator} from 'react-sprite-animator';
 import flyEyeIdle from "../../assets/Monsters/FlyingEye/Flight.png";
-import goblinIdle from "../assets/Monsters/Goblin/Idle.png";
-import mushroomIdle from "../assets/Monsters/Mushroom/Idle.png";
-import skeletonIdle from "../assets/Monsters/Skeleton/Idle.png";
+import goblinIdle from "../../assets/Monsters/Goblin/Idle.png";
+import mushroomIdle from "../../assets/Monsters/Mushroom/Idle.png";
+import skeletonIdle from "../../assets/Monsters/Skeleton/Idle.png";
 
 const CharacterSelect = () => {
 
     const charList = [
         {
             id: 1,
-            name: flyEye,
+            monster: 'Fly Eye',
             src: flyEyeIdle
         },
         {
             id: 2,
-            name: goblin,
+            monster: 'Goblin',
             src: goblinIdle,
         },
         {
             id: 3,
-            name: mushroom,
+            monster: 'Mushroom',
             src: mushroomIdle,
         },
         {
             id: 4,
-            name: skeleton,
+            monster: 'Skeleton',
             src: skeletonIdle,
         }
     ]
 
     return (
-        <div>
-            <div className="character">
-                <ul className="flex col-lg-3">
-                    {charList.map(({id, src}) => (            
-                    <li key={id} className={name}> 
+        <div className="container">
+            <div className="container">
+                <ul className="charcontainers">
+                    {charList.map(({id, monster, src}) => (            
+                    <li key={id} className="monsterSprite"> 
                         <SpriteAnimator
-                        width={150}
-                        height={150}
-                        scale={.5}
-                        sprite={src}
-                        shouldAnimate={true}
-                        startFrame={0}
-                    />
-                    </li>
+                            width={150}
+                            height={150}
+                            scale={.5}
+                            sprite={src}
+                            shouldAnimate={true}
+                            startFrame={0}
+                        />
+                    <button className="selectBtn">
+                        {monster}
+                    </button>
+                    </li>                    
                     ))}                    
                 </ul>
-                <button className={selectBtn}>
-                    Select
-                </button>
         </div>
         </div>
     );
