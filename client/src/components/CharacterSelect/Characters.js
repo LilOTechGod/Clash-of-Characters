@@ -50,7 +50,7 @@ const CharacterSelect = () => {
                     </li>                    
                     ))}                    
                 </ul>
-        </div>
+            </div>
         </div>
     );
 };
