@@ -12,3 +12,4 @@ export const BattleScreen=({onAttack, onDefend, onCounter, onStrike})=>{
         </div>);
 }
 
+export default BattleScreen;

@@ -5,6 +5,8 @@ import { StartMenu } from './components/StartMenu/StartMenu.js';
 import Login from './components/pages/Login';
 import Signup from './components/pages/Signup';
 import Header from './components/Header/index';
+import BattleScreen from './components/BattleScreen/BattleScreen';
+
 
 import {
   ApolloClient,
@@ -58,18 +60,11 @@ function App() {
                 path="/signup" 
                 element={<Signup />}
               />
-              {/* <Route 
-                path="/me" 
-                element={<Profile />}
-              />
               <Route 
-                path="/profiles/:username" 
-                element={<Profile />}
+                path="/battleScreen" 
+                element={<BattleScreen />}
               />
-              <Route 
-                path="/thoughts/:thoughtId" 
-                element={<SingleThought />}
-              /> */}
+              
             </Routes>
           </div>
         

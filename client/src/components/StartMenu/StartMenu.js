@@ -14,7 +14,5 @@ export const StartMenu = ({ onStartClick }) => {
                 <img src={BG} className='secondbg'></img>
             </div>
         </div>
-
-
     );
 };
