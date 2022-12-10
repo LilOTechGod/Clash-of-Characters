@@ -72,6 +72,7 @@ function App() {
               <Route 
                 path="/battleScreen" 
                 element={<BattleScreen />}
+
               />
               <Route
               path="endMenu"
