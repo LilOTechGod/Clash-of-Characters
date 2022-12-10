@@ -21,7 +21,7 @@ export const EndMenu = () => {
 
             <div className="end-button">
             <Link to="/">
-                LOGOUT
+                ENDGAME
             </Link>
             </div>
         </div>
@@ -29,28 +29,3 @@ export const EndMenu = () => {
 };
 
 export default EndMenu;
-
-
-
-// import styles from '/Users/brandonknight/Documents/Clash-Of-Characters-vs2/Clash-of-Characters/client/src/components/Endmenu/index.cssd'
-// import BG from '../../assets/oak_woods_v1.0/background/background_layer_2.png';
-// import '../StartMenu/index.css';
-// import { useNavigate } from "react-router-dom";
-// import React from 'react';
-
-// export const EndMenu = () => {
-//     const navigate = useNavigate();
-//     const onStartClick = () => navigate('/characterSelect');
-//     return (
-//         <div className={styles.main}>
-//             <button className={styles.startButton} onClick={onStartClick} id='srtButton'>
-//                 CHOOSE CHARACTER
-//             </button>
-//             <div className='bg2'>
-//                 <img src={BG} className='secondbg' alt="background-of-trees"></img>
-//             </div>
-//         </div>
-//     );
-// };
-
-// export default EndMenu;
