@@ -1,13 +1,13 @@
 import React from 'react'
-import { useState, useEffect } from 'react';
-import styles from './index.css'
+import './index.css'
 import { StartMenu } from './components/StartMenu/StartMenu.js';
 import Login from './components/pages/Login';
 import Signup from './components/pages/Signup';
 import Header from './components/Header/index';
 import CharacterSelect from './components/CharacterSelect/Characters';
 import BattleScreen from './components/BattleScreen/BattleScreen';
-import Canvas from "./components/BattleScreen/Canvas/Canvas"
+import EndMenu from './components/Endmenu/Endmenu';
+
 
 import {
   ApolloClient,
@@ -74,7 +74,10 @@ function App() {
                 element={<BattleScreen />}
 
               />
-              
+              <Route
+              path="endMenu"
+              element={<EndMenu />}
+              />
             </Routes>
           </div>
         

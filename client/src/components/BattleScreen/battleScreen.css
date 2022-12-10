@@ -1,8 +1,7 @@
 .container {
-    margin: auto auto;
-    width:650px;
-    height:325px;
-    background-color:#fff;
+    margin: 20px auto;
+    width:700px;
+    height:400px;
     display:grid;
     grid-template-columns: auto auto;
     grid-row: auto auto;

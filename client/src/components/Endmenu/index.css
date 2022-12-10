@@ -1,0 +1,26 @@
+.endmenu-page {
+    margin: 20px auto;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.end-button {
+    border:0px;
+    background-color: rgb(255,0,0,0.6);
+    border-radius:6px;
+    padding: 15px 32px;
+    
+    font-size: 32px;
+    margin:5px;
+    transition-duration: 0.2s;
+    }
+    
+    .end-button:hover {
+    background-color:rgb(255,0,0,0.8)
+    
+    }

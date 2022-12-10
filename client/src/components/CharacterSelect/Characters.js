@@ -1,4 +1,5 @@
 import {selectBtn} from './index.css';
+import { useNavigate } from "react-router-dom";
 import {SpriteAnimator} from 'react-sprite-animator';
 import flyEyeIdle from "../../assets/Monsters/FlyingEye/Flight.png";
 import goblinIdle from "../../assets/Monsters/Goblin/Idle.png";
@@ -30,6 +31,9 @@ const CharacterSelect = () => {
         }
     ]
 
+    const navigate = useNavigate();
+    const onStartClick = () => navigate('/battleScreen');
+
     return (
         <div className="container">
             <div className="container">
@@ -44,13 +48,13 @@ const CharacterSelect = () => {
                             shouldAnimate={true}
                             startFrame={0}
                         />
-                    <button className="selectBtn">
+                    <button className="selectBtn" onClick={onStartClick}>
                         {monster}
                     </button>
                     </li>                    
                     ))}                    
                 </ul>
-        </div>
+            </div>
         </div>
     );
 };
