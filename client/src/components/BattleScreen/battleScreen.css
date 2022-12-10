@@ -15,3 +15,35 @@ Canvas{
     left:550px;
 }
 
+.buttonAttack {
+    border:0px;
+    background-color: rgb(255,0,0,0.6);
+    border-radius:6px;
+    color: white;
+    padding: 15px 32px;
+
+    font-size: 32px;
+    margin:5px;
+    transition-duration: 0.2s;
+}
+
+.buttonAttack:hover {
+    background-color:rgb(255,0,0,0.8)
+
+}
+.buttonDefend {
+    border:0px;
+    background-color: rgb(0,0,255,0.6);
+    border-radius:6px;
+    color: white;
+    padding: 15px 32px;
+
+    font-size: 32px;
+    margin:5px;
+    transition-duration: 0.2s;
+    }
+    
+.buttonDefend:hover {
+    background-color:rgb(0,0,255,0.8)
+
+}
