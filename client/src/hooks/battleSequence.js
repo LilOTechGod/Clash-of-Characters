@@ -19,7 +19,7 @@ const battleSequence = () => {
     
           switch (mode) {
             case 'attack': {
-              const damage = attack({ attacker, receiver });
+              const damage = onAttack({ attacker, receiver });
     
               
     

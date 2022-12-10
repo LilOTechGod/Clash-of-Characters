@@ -8,7 +8,7 @@ export const onattack = ({ attacker, receiver }) => {
 };
 
 export const onstrike = ({ attacker, receiver }) => {
-    const receivedDamage = attacker.strike - (attacker.level - receiver.level) * 1.25;
+    const receivedDamage = attacker.strike - (attacker.level - receiver.level) * 1.10;
 
     const finalDamage = receivedDamage - receiver.defense / 2;
 
@@ -16,15 +16,15 @@ export const onstrike = ({ attacker, receiver }) => {
 };
 
 export const oncounter = ({ attacker, receiver }) => {
-    const receivedDamage = attacker.strike - (attacker.level - receiver.level) * 1.25;
+    const receivedDamage = attacker.strike - (attacker.level - receiver.level) * 1.00;
 
     const finalDamage = receivedDamage - receiver.defense / 2;
 
     return finalDamage;
 };
 
-export const ondefend = ({ attacker, receiver }) => {
-    const receivedDamage = attacker.strike - (attacker.level - receiver.level) * 1.25;
+export const ondefend = ({ receiver }) => {
+    const receivedDamage = attacker.strike - (attacker.level - receiver.level) * .25;
 
     const finalDamage = receivedDamage - receiver.defense / 2;
 
