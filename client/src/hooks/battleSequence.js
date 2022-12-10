@@ -11,26 +11,22 @@ const battleSequence = () => {
     const [oppenentAnimation, setOpponentAnimation] = useState('static');
 
     useEffect(() => {
-        const { mode, turn } = inSequence;
-
+        const { mode, turn } = sequence;
+    
         if (mode) {
-
-            const attacker = turn === 0 ? playerStats : opponentStats;
-            const receiver = turn === 0 ? opponentStats : playerStats;
-
-            switch (mode) {
-                case 'attack':
-                    const damage = attack({ attacker, receiver});
-
-
-
-                    break;
-
-                    default:
-                        break;
+          const attacker = turn === 0 ? playerStats : opponentStats;
+          const receiver = turn === 0 ? opponentStats : playerStats;
+    
+          switch (mode) {
+            case 'attack': {
+              const damage = onAttack({ attacker, receiver });
+    
+              
+    
+              break;
             }
         }
-    })
+    }})
 
 
     return {

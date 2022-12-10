@@ -3,7 +3,6 @@
     margin: 20px auto;
     width:700px;
     height:400px;
-    background-color:#fff;
     display:grid;
     grid-template-columns: auto auto;
     grid-row: auto auto;
