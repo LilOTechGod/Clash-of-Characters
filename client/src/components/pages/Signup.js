@@ -31,7 +31,7 @@ const Signup = () => {
       const { data } = await addUser({
         variables: { ...formState },
       });
-console.log(data)
+      console.log(data)
       Auth.login(data.addUser.token);
     } catch (e) {
       console.error(e);
@@ -39,58 +39,56 @@ console.log(data)
   };
 
   return (
-    <main className="flex-row justify-center mb-4">
-      <div className="col-12 col-lg-10">
-        <div className="card">
-          <h4 className="card-header bg-dark text-light p-2">Sign Up</h4>
-          <div className="card-body">
-            {data ? (
-              <p>
-                Success! You may now head{' '}
-                <Link to="/battleScreen">back to the homepage.</Link>
-              </p>
-            ) : (
-              <form onSubmit={handleFormSubmit}>
-                <input
-                  className="form-input"
-                  placeholder="Your username"
-                  name="username"
-                  type="text"
-                  value={formState.name}
-                  onChange={handleChange}
-                />
-                <input
-                  className="form-input"
-                  placeholder="Your email"
-                  name="email"
-                  type="email"
-                  value={formState.email}
-                  onChange={handleChange}
-                />
-                <input
-                  className="form-input"
-                  placeholder="******"
-                  name="password"
-                  type="password"
-                  value={formState.password}
-                  onChange={handleChange}
-                />
-                <button
-                  className="btn btn-block btn-primary"
-                  style={{ cursor: 'pointer' }}
-                  type="submit"
-                >
-                  Submit
-                </button>
-              </form>
-            )}
+    <main className="">
+      <div className="">
+        <h4 className="">Sign Up</h4>
+        <div className="">
+          {data ? (
+            <p>
+              LETS PLAY!!!!{' '}
+              <Link to="/battleScreen"></Link>
+            </p>
+          ) : (
+            <form onSubmit={handleFormSubmit}>
+              <input
+                className="form-input"
+                placeholder="Your username"
+                name="username"
+                type="text"
+                value={formState.name}
+                onChange={handleChange}
+              />
+              <input
+                className="form-input"
+                placeholder="Your email"
+                name="email"
+                type="email"
+                value={formState.email}
+                onChange={handleChange}
+              />
+              <input
+                className="form-input"
+                placeholder="******"
+                name="password"
+                type="password"
+                value={formState.password}
+                onChange={handleChange}
+              />
+              <button
+                className="signup-button"
+                style={{ cursor: 'pointer' }}
+                type="submit"
+              >
+                Submit
+              </button>
+            </form>
+          )}
 
-            {error && (
-              <div className="my-3 p-3 bg-danger text-white">
-                {error.message}
-              </div>
-            )}
-          </div>
+          {error && (
+            <div>
+              {error.message}
+            </div>
+          )}
         </div>
       </div>
     </main>
