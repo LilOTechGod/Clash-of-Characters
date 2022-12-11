@@ -1,26 +1,26 @@
 import React from 'react'
-import styles from './healthBar.css'
+import './healthBar.css'
 
 export const HealthBar =({main=false,health,maxHealth,label,name,level}) => {
 return(
   <div
-    className={styles.main}
-    style={{ backgroundColor: main ? "#ff0000" : "#0000ff" }}
+    className="main"
+    style={{ backgroundColor: main ? "#ADD8E6" : "#CF2734" }}
   >
-    <div className={styles.info}>
-      <div className={styles.name}>{name}</div>
-      <div className={styles.level}>Lvl {level}</div>
+    <div className="info">
+      <div className="name">{name}</div>
+      <div className="level">Lvl {level}</div>
     </div>
 
-    <div className={styles.health}>
-    <div className={styles.main}>
-    <div className={styles.label}>{label}</div>
-    <div className={styles.max}>
-      <div
-        className={styles.value}
-        style={{ width: `${(health / maxHealth) * 100}%` }}
-      ></div>
-    </div>
+    <div className="health">
+    <div className="main">
+        <div className="label">{label}</div>
+        <div className="max">
+          <div
+            className="health"
+            style={{ width: `${(health / maxHealth) * 100}%` }}
+          ></div>
+        </div>
   </div>
     </div>
   </div>

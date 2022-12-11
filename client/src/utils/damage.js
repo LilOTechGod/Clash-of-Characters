@@ -23,7 +23,7 @@ export const oncounter = ({ attacker, receiver }) => {
     return finalDamage;
 };
 
-export const ondefend = ({ receiver }) => {
+export const ondefend = ({ attacker, receiver }) => {
     const receivedDamage = attacker.strike - (attacker.level - receiver.level) * .25;
 
     const finalDamage = receivedDamage - receiver.defense / 2;
