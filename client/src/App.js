@@ -7,6 +7,7 @@ import Header from './components/Header/index';
 import CharacterSelect from './components/CharacterSelect/Characters';
 import BattleScreen from './components/BattleScreen/BattleScreen';
 import EndMenu from './components/Endmenu/Endmenu';
+import { useEffect, useState } from 'react';
 
 
 import {
