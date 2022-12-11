@@ -1,8 +1,7 @@
-export * from './App'
-export * from './StartMenu'
+
+
+// NOT SURE WHAT THESE ARE FOR??? IF we don't need them we can get rid of this index file........
 
 export * from './Characters'
 export * from './Battle'
-export * from './Endmenu'
-export * from './Header'
-export * from './pages'
+
