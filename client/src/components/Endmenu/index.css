@@ -1,23 +1,26 @@
 .endmenu-page {
-    margin: 20px auto;
-    width: 100%;
-    height: 100%;
+    margin: 150px auto;
     text-align: center;
     display: flex;
-    align-content: center;
+    align-items: center;
     flex-direction: column;
-    justify-content: center;
 }
 
 .end-button {
-    border:0px;
+    display: flex;
+    border: 0px;
     background-color: rgb(255,0,0,0.6);
-    border-radius:6px;
+    border-radius: 6px;
     padding: 15px 32px;
-    
-    font-size: 32px;
-    margin:5px;
+    font-size: 36px;
+    margin: 15px 0;
     transition-duration: 0.2s;
+    width: 400px;
+    height: 140px;
+    align-items: center;
+    justify-content: center;
+    font-family: "Alfa Slab One", cursive;
+
     }
     
     .end-button:hover {

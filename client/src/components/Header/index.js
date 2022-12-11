@@ -16,7 +16,7 @@ const Header = () => {
             <h1 className="clash-title">Clash of Characters</h1>
           </Link>
         </div>
-        <div>
+        <div className="logInOut-container">
           {Auth.loggedIn() ? (
             <>
              
