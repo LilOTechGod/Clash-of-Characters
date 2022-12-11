@@ -25,3 +25,5 @@ export const PlayerSummary = ({
     </div>
   </div>
 );
+
+export default PlayerSummary;

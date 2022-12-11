@@ -1,8 +1,8 @@
 import React from 'react'
 import './index.css'
-import { StartMenu } from './components/StartMenu/StartMenu.js';
-import Login from './components/pages/Login';
-import Signup from './components/pages/Signup';
+import StartMenu from './components/StartMenu/StartMenu';
+import Login from './components/Login/Login'
+import Signup from './components/Signup/Signup';
 import Header from './components/Header/index';
 import CharacterSelect from './components/CharacterSelect/Characters';
 import BattleScreen from './components/BattleScreen/BattleScreen';
@@ -72,7 +72,7 @@ function App() {
 
               />
               <Route
-              path="endMenu"
+              path="/endMenu"
               element={<EndMenu />}
               />
             </Routes>
