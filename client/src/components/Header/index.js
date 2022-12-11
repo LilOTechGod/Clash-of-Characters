@@ -9,7 +9,7 @@ const Header = () => {
     Auth.logout();
   };
   return (
-    <header className="">
+    <header className="header-container">
       <div className="">
         <div>
           <Link className="" to="/">
