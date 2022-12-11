@@ -10,16 +10,12 @@ const Header = () => {
   };
   return (
     <header className="header-container">
-      <div className="">
-        <div>
-          <Link className="" to="/">
-            <h1 className="clash-title">Clash of Characters</h1>
+          <Link className="clash-title" to="/">
+            Clash of Characters
           </Link>
-        </div>
         <div className="logInOut-container">
           {Auth.loggedIn() ? (
             <>
-             
               <button className="logInOut" onClick={logout}>
                 Logout
               </button>
@@ -35,7 +31,6 @@ const Header = () => {
             </>
           )}
         </div>
-      </div>
     </header>
   );
 };
