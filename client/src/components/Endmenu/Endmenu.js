@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import './index.css';
-import FlyIdle from "../Animations/Flyeye/Idle";
+import EndMenuFlyIdle from "./EndMenuFlyIdle";
 
 
 export const EndMenu = () => {
@@ -21,7 +21,7 @@ export const EndMenu = () => {
             </Link>
             
             <div className="endFlyIdle">
-            <FlyIdle /> 
+            <EndMenuFlyIdle /> 
             </div>
         </div>
     );
