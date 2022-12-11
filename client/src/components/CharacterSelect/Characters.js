@@ -1,10 +1,9 @@
-import {selectBtn} from './index.css';
+import './index.css';
 import { useNavigate } from "react-router-dom";
-import {SpriteAnimator} from 'react-sprite-animator';
-import flyEyeIdle from "../../assets/Monsters/FlyingEye/Flight.png";
-import goblinIdle from "../../assets/Monsters/Goblin/Idle.png";
-import mushroomIdle from "../../assets/Monsters/Mushroom/Idle.png";
-import skeletonIdle from "../../assets/Monsters/Skeleton/Idle.png";
+import FlyIdle from "../Animations/Flyeye/Idle";
+import GobIdle from "../Animations/Goblin/Idle";
+import MushIdle from "../Animations/Mushroom/Idle";
+import SkeleIdle from "../Animations/Skeleton/Idle";
 
 const CharacterSelect = () => {
 
@@ -12,22 +11,22 @@ const CharacterSelect = () => {
         {
             id: 1,
             monster: 'Fly Eye',
-            src: flyEyeIdle
+            src: <FlyIdle/>
         },
         {
             id: 2,
             monster: 'Goblin',
-            src: goblinIdle,
+            src: <GobIdle/>
         },
         {
             id: 3,
             monster: 'Mushroom',
-            src: mushroomIdle,
+            src: <MushIdle/>
         },
         {
             id: 4,
             monster: 'Skeleton',
-            src: skeletonIdle,
+            src: <SkeleIdle/>
         }
     ]
 
@@ -39,15 +38,8 @@ const CharacterSelect = () => {
             <div className="container">
                 <ul className="charcontainers">
                     {charList.map(({id, monster, src}) => (            
-                    <li key={id} className="monsterSprite"> 
-                        <SpriteAnimator
-                            width={150}
-                            height={150}
-                            scale={.5}
-                            sprite={src}
-                            shouldAnimate={true}
-                            startFrame={0}
-                        />
+                    <li key={id} className="monsterSprite">
+                        {src} 
                     <button className="selectBtn" onClick={onStartClick}>
                         {monster}
                     </button>

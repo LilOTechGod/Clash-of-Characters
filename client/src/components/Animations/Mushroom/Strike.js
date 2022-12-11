@@ -1,0 +1,22 @@
+import {SpriteAnimator} from 'react-sprite-animator';
+import mushStrike from '../../../assets/Monsters/Mushroom/Strike.png'
+import React from 'react'
+
+const Strike = () => {
+  return (
+    <div>
+        <SpriteAnimator
+            width={150}
+            height={150}
+            scale={.6}
+            sprite={mushStrike}
+            shouldAnimate={true}
+            startFrame={0}
+            frameCount={8}
+            fps={8}
+        />
+    </div>
+  )
+}
+
+export default Strike
