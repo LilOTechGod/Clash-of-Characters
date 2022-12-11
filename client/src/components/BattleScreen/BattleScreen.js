@@ -27,6 +27,7 @@ export const BattleScreen=()=>{
         opponentAnimation} = useBattleSequence(sequence);
     const aiChoice = useAIOpponent(turn);
     const navigate = useNavigate();
+
      function onGameEnd(outcome){
         //pass through the database 
         navigate('/endMenu');
@@ -45,7 +46,7 @@ export const BattleScreen=()=>{
             onGameEnd(playerHealth === 0 ? "loss" : "win");
             })();
         }
-        }, [playerHealth, opponentHealth]);
+        }, [playerHealth, opponentHealth,onGameEnd]);
 
     let playerImg;
     switch(playerAnimation){
@@ -59,6 +60,7 @@ export const BattleScreen=()=>{
         case "static":{opponentImg=<SkeleIdle/>; break}
         case "damage":{opponentImg=<SkeleCounter/>; break}
     }
+
     return(
         <div>
             <div id="playerSummary">
@@ -89,10 +91,10 @@ export const BattleScreen=()=>{
             
 
             <div id="btnPosition">
-                   <button className="buttonAttack" onClick={console.log("Attack")}>Attack</button>
-                    <button className="buttonDefend" onClick={console.log("Defend")}>Defend</button>
-                    <button className="buttonDefend" onClick={console.log("Counter")}>Counter</button>
-                  <button className="buttonAttack" onClick={console.log("Strike")}>Strike</button>
+                   <button className="buttonAttack" onClick={() => setSequence({mode:'attack', turn })}>Attack</button>
+                    <button className="buttonDefend" onClick={() => console.log("Defend")}>Defend</button>
+                    <button className="buttonDefend" onClick={() => console.log("Counter")}>Counter</button>
+                  <button className="buttonAttack" onClick={() => setSequence({mode:'strike', turn })}>Strike</button>
 
            </div>
 
