@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import './index.css';
+import FlyIdle from "../Animations/Flyeye/Idle";
 
 
 export const EndMenu = () => {
@@ -18,7 +19,10 @@ export const EndMenu = () => {
             <Link className="end-button" to="/">
                 ENDGAME
             </Link>
-           
+            
+            <div className="endFlyIdle">
+            <FlyIdle /> 
+            </div>
         </div>
     );
 };

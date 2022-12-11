@@ -1,5 +1,5 @@
 .endmenu-page {
-    margin: 150px auto;
+    margin: 100px auto;
     text-align: center;
     display: flex;
     align-items: center;
@@ -16,7 +16,7 @@
     margin: 15px 0;
     transition-duration: 0.2s;
     width: 400px;
-    height: 1-0px;
+    height: 100px;
     align-items: center;
     justify-content: center;
     font-family: "Alfa Slab One", cursive;
@@ -27,3 +27,7 @@
         color: #fff;
         border: 1px solid rgb(4, 4, 4);
     }
+
+    /* .endFlyIdle {
+       
+    } */
