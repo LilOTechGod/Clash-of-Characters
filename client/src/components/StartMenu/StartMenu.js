@@ -10,10 +10,11 @@ export const StartMenu = () => {
     return (
         <div className={styles.main}>
             <button className={styles.startButton} onClick={onStartClick} id='srtButton'>
-                Start Game
+                Push Start 
             </button>
             <div className='bg2'>
                 <img src={BG} className='secondbg' alt="background-of-trees"></img>
+                
             </div>
         </div>
     );

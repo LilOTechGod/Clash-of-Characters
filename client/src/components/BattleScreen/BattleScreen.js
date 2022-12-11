@@ -13,6 +13,7 @@ import SkeleAttack from "../Animations/Skeleton/Attack";
 import MushCounter from "../Animations/Mushroom/Counter";
 import SkeleCounter from "../Animations/Skeleton/Counter";
 import { useNavigate } from "react-router-dom";
+import { onattack } from '../../utils/damage';
 
 
 export const BattleScreen=()=>{
