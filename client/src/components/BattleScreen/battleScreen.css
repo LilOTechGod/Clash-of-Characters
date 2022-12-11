@@ -49,15 +49,15 @@ Canvas{
 }
 #playerSummary{
     position: absolute;
-    z-index: 2;
+    z-index: 4;
     top: 150px;
     left:550px;
 }
 #opponentSummary{
     position: absolute;
-    z-index: 2;
+    z-index: 4;
     top: 150px;
-    left:850px;
+    left:1000px;
 }
 #btnPosition{
     position: absolute;
