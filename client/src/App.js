@@ -76,7 +76,7 @@ function App() {
 
               />
               <Route
-              path="endMenu"
+              path="/endMenu"
               element={<EndMenu />}
               />
             </Routes>

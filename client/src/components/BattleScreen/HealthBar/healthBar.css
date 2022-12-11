@@ -6,10 +6,6 @@
     padding: 5px;
     align-items: center;
     background-color: white;
-    position: absolute;
-    z-index: 3;
-    top:250px;
-    left:315px;
   }
   
   .label {
@@ -36,4 +32,13 @@
     background-color: #0566fa;
   
     transition: 0.35s;
+  }
+  .info {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .name,
+  .level {
+    font-size: 32px;
   }

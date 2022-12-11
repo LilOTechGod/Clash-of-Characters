@@ -42,3 +42,25 @@ export const flyEyeStats = {
     defense: 30,
     counter: 30,
   };
+  export const playerStats  = {
+    level: 44,
+    name: 'Skeleton',
+    maxHealth: 180,
+    img: '',
+  
+    strike: 65,
+    attack: 50,
+    defense: 30,
+    counter: 30,
+  };
+  export const opponentStats = {
+    level: 44,
+    name: 'Skeleton',
+    maxHealth: 180,
+    img: '',
+  
+    strike: 65,
+    attack: 50,
+    defense: 30,
+    counter: 30,
+  };
