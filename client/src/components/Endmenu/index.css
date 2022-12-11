@@ -1,5 +1,5 @@
 .endmenu-page {
-    margin: 150px auto;
+    margin: 100px auto;
     text-align: center;
     display: flex;
     align-items: center;
@@ -8,22 +8,26 @@
 
 .end-button {
     display: flex;
-    border: 0px;
-    background-color: rgb(255,0,0,0.6);
+    border: 1px solid #fff;
+    background-color: rgba(194, 63, 238, 0.93);
     border-radius: 6px;
     padding: 15px 32px;
     font-size: 36px;
     margin: 15px 0;
     transition-duration: 0.2s;
     width: 400px;
-    height: 140px;
+    height: 100px;
     align-items: center;
     justify-content: center;
     font-family: "Alfa Slab One", cursive;
-
     }
     
     .end-button:hover {
-    background-color:rgb(255,0,0,0.8)
-    
+        background-color: rgba(136, 59, 180, 0.764);
+        color: #fff;
+        border: 1px solid rgb(4, 4, 4);
     }
+
+    /* .endFlyIdle {
+       
+    } */

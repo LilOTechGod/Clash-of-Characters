@@ -1,28 +1,27 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import './index.css';
+import EndMenuFlyIdle from "./EndMenuFlyIdle";
 
 
 export const EndMenu = () => {
     return (
         <div className="endmenu-page">
-            
-            <div className="end-button">
-            <Link to="/characterSelect">
+         
+            <Link className="end-button" to="/characterSelect">
                 CHOOSE CHARACTER
             </Link>
-            </div>
-
-            <div className="end-button">
-            <Link to="/battleScreen">
+          
+            <Link className="end-button" to="/battleScreen">
                 PLAY AGAIN
             </Link>
-            </div>
-
-            <div className="end-button">
-            <Link to="/">
+           
+            <Link className="end-button" to="/">
                 ENDGAME
             </Link>
+            
+            <div className="endFlyIdle">
+            <EndMenuFlyIdle /> 
             </div>
         </div>
     );
