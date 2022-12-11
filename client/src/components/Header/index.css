@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One');
+
+.logInOut-container {
+    margin: 150px auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.clash-title{
+    font-family: "Alfa Slab One", cursive;
+    text-align: left;
+    font-size: 74px;
+    letter-spacing: 4px;
+    color: rgba(194, 63, 238, 0.93);
+    text-shadow: rgba(0, 0, 0, 0.56) -12px 11px 3px;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 24px;
+}
+
+.logInOut{
+    font-family: "Alfa Slab One", cursive;
+    display: flex;
+    border:0px;
+    background-color: rgba(194, 63, 238, 0.93);
+    border-radius:6px;
+    padding: 15px 32px;
+    font-size: 48px;
+    margin: 20px 0;
+    transition-duration: 0.2s;
+    justify-content: center;
+    width: 400px;
+    height: 100px;
+    align-items: center;
+}
+
+.logInOut:hover {
+    background-color: rgba(194, 85, 238, 1);
+    
+    }

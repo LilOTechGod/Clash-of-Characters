@@ -7,6 +7,7 @@ import Header from './components/Header/index';
 import CharacterSelect from './components/CharacterSelect/Characters';
 import BattleScreen from './components/BattleScreen/BattleScreen';
 import EndMenu from './components/Endmenu/Endmenu';
+import { useEffect, useState } from 'react';
 
 
 import {
@@ -46,8 +47,8 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
-        <div className="flex-column justify-flex-start min-100-vh">
-          <div className="container">
+        <div className="">
+          <div className="">
             <Routes>
               <Route 
                 path="/"
