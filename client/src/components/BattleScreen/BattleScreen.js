@@ -63,7 +63,7 @@ export const BattleScreen=()=>{
     }
 
     return(
-        <div>
+        <div className='healthBar'>
             <div id="playerSummary">
                 <HealthBar
                 main={true}
