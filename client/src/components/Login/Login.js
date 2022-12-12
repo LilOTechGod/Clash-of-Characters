@@ -50,31 +50,36 @@ const Login = (props) => {
               <Link to="/battleScreen"></Link>
             </p>
           ) : (
-            <form onSubmit={handleFormSubmit}>
-              <input
-                className="form-input"
-                placeholder="Your email"
-                name="email"
-                type="email"
-                value={formState.email}
-                onChange={handleChange}
-              />
-              <input
-                className="form-input"
-                placeholder="******"
-                name="password"
-                type="password"
-                value={formState.password}
-                onChange={handleChange}
-              />
-              <button
-                className="login-button"
-                style={{ cursor: 'pointer' }}
-                type="submit"
-              >
-                Submit
-              </button>
-            </form>
+            <div class="container">
+              <form onSubmit={handleFormSubmit} id='form_style'>
+                <label className="lname">Emal: </label>
+                <input
+                  className="form-input"
+                  placeholder="Your email"
+                  name="email"
+                  type="email"
+                  value={formState.email}
+                  onChange={handleChange}
+                />
+                <label className="lname">Password: </label>
+                <input
+                  className="form-input"
+                  placeholder="******"
+                  name="password"
+                  type="password"
+                  value={formState.password}
+                  onChange={handleChange}
+                />
+                <label className="lname">Submit: </label>
+                <button
+                  className="login-button"
+                  style={{ cursor: 'pointer' }}
+                  type="submit"
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
           )}
 
           {error && (
@@ -88,3 +93,15 @@ const Login = (props) => {
 };
 
 export default Login;
+
+  // <form action="action_page.php">
+
+  //
+  //   <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+  //
+  //   <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+  //   <input type="submit" value="Submit">
+
+  // </form>

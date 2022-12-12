@@ -21,7 +21,9 @@ export const EndMenu = () => {
             </Link>
             
             <div className="endFlyIdle">
-            <EndMenuFlyIdle /> 
+                <div className='flyChar'>
+                    <EndMenuFlyIdle /> 
+                </div>    
             </div>
         </div>
     );
