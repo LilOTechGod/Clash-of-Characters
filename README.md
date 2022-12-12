@@ -1,5 +1,5 @@
 # Clash of Characters
-![License](https://img.shields.io/badge/License-MIT-blue)
+
 
 ## Description
 Have you had enough of fighting monsters and want to play as said creatures, or maybe just want to satisfy some simple desires to play some good old retro arcade fighting games? You've come to the right place! In this interactive web-based browser game, players can choose between different monsters and/or characters to battle against an AI. Choose your moves wisely on the path to victory!
@@ -62,6 +62,10 @@ Backgrounds were procured from https://noranekogames.itch.io/yumebackground.
 Special thanks to Leah, Ian, Negin, and Diem for keeping us afloat through the bootcamp!
 
 ## Collaborations
+<a href="https://github.com/LilOTechGod/Clash-of-Characters/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=LilOTechGod/Clash-of-Characters" />
+</a>
+
 This project was made possible by the hard work of the following contributors, with links to each of their respective GitHubs:
 
 * [Oscar Perez](https://github.com/LilOTechGod)
@@ -76,7 +80,7 @@ If you have any additional questions, feel free to reach out via any of the abov
 ## License
 Refer to license in repo or as below:
 
-MIT License
+![License](https://img.shields.io/badge/License-MIT-blue)
 
 Copyright (c) 2022 LilOTechGod
 
