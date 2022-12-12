@@ -27,7 +27,12 @@
     background-color: lightgray;
   }
   .health {
-    background-color: #0566fa;
+    background-color: blue;
+    transition: 0.35s;
+  }
+  .healthLeft {
+    height: 35px;
+    background-color: lightgreen;
     transition: 0.35s;
     /* font-family: 'Press Start 2P', cursive; */
     

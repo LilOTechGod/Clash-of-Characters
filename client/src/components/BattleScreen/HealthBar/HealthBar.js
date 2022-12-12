@@ -16,7 +16,7 @@ return(
         <div className="label">{label}</div>
         <div className="max">
           <div
-            className="health"
+            className="healthLeft"
             style={{ width: `${(health / maxHealth) * 100}%` }}
           ></div>
         </div>

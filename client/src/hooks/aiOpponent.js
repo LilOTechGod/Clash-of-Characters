@@ -6,7 +6,7 @@ export const useAIOpponent = turn => {
 
     useEffect(() => {
         if (turn === 1) {
-            const options = ['attack', 'strike', 'counter', 'defend'];
+            const options = ['attack', 'strike'];
             setAIChoice(options[Math.floor(Math.random() * options.length)])
         }
     }, [turn]);
