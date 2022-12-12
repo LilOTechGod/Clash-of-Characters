@@ -1,5 +1,5 @@
 .endmenu-page {
-    margin: 100px auto;
+    margin: 100px auto, 0, auto;
     text-align: center;
     display: flex;
     align-items: center;
@@ -29,6 +29,19 @@
         border: 1px solid rgb(4, 4, 4);
     }
 
-    /* .endFlyIdle {
-       
-    } */
+    .endFlyIdle {
+       margin-top: 0;
+       padding-top: 0;
+    }
+
+    @media (max-width: 600px) {
+        .endmenu-page {
+          margin: 50px auto 0 auto;
+        }
+        .end-button {
+            width: 80vw;
+            min-width: 250px;
+            max-width: 400px;
+          }
+      }
+      

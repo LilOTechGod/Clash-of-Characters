@@ -12,7 +12,7 @@ const CharacterSelect = ({selectFighter}) => {
 
     return (
         <div className="container">
-            <div className="container">
+           
                 <ul className="charcontainers">
                     {/* updates state in parent component to player choice, FlyEye */}
                     <li className="monsterSprite">
@@ -55,7 +55,6 @@ const CharacterSelect = ({selectFighter}) => {
                         </button>
                     </li>                    
                 </ul>
-            </div>
         </div>
     );
 };
