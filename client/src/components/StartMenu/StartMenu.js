@@ -13,8 +13,7 @@ export const StartMenu = () => {
                 Push Start 
             </button>
             <div className='bg2'>
-                <img src={BG} className='secondbg' alt="background-of-trees"></img>
-                
+                <img src={BG} className='secondbg' alt="background-of-trees"></img>  
             </div>
         </div>
     );
