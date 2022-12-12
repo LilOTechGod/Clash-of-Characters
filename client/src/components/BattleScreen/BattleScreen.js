@@ -6,16 +6,23 @@ import useBattleSequence from "../../hooks/battleSequence";
 import React, { useEffect, useState } from 'react';
 import {wait} from "../../utils/wait";
 import { opponentStats,playerStats } from '../../shared/characters';
+import FlyIdle from "../Animations/Flyeye/Idle";
+import GobIdle from "../Animations/Goblin/Idle";
 import MushIdle from "../Animations/Mushroom/Idle";
 import SkeleIdle from "../Animations/Skeleton/Idle";
+import FlyAttack from "../Animations/Flyeye/Attack";
+import GobAttack from "../Animations/Goblin/Attack";
 import MushAttack from "../Animations/Mushroom/Attack";
 import SkeleAttack from "../Animations/Skeleton/Attack";
+import FlyCounter from "../Animations/Flyeye/Counter";
+import GobCounter from "../Animations/Goblin/Counter";
 import MushCounter from "../Animations/Mushroom/Counter";
 import SkeleCounter from "../Animations/Skeleton/Counter";
 import { useNavigate } from "react-router-dom";
+import { onattack } from '../../utils/damage';
 
 
-export const BattleScreen=()=>{
+export const BattleScreen=({selectedFighter})=>{
     const [sequence,setSequence] = useState({});
 
     const {
@@ -49,20 +56,33 @@ export const BattleScreen=()=>{
         }, [playerHealth, opponentHealth,onGameEnd]);
 
     let playerImg;
-    switch(playerAnimation){
-        case "attack":{playerImg=<MushAttack/>; break}
-        case "static":{playerImg=<MushIdle/>; break}
-        case "damage":{playerImg=<MushCounter/>; break}
+    console.log({selectedFighter});
+    switch (true) {
+        case (selectedFighter === "Flyeye") && (playerAnimation === "attack") : {playerImg=<FlyAttack/>; break}
+        case (selectedFighter === "Flyeye") && (playerAnimation === "static") : {playerImg=<FlyIdle/>; break}
+        case (selectedFighter === "Flyeye") && (playerAnimation === "damage") : {playerImg=<FlyCounter/>; break}
+        case (selectedFighter === "Goblin") && (playerAnimation === "attack") : {playerImg=<GobAttack/>; break}
+        case (selectedFighter === "Goblin") && (playerAnimation === "static") : {playerImg=<GobIdle/>; break}
+        case (selectedFighter === "Goblin") && (playerAnimation === "damage") : {playerImg=<GobCounter/>; break}
+        case (selectedFighter === "Mushroom") && (playerAnimation === "attack") : {playerImg=<MushAttack/>; break}
+        case (selectedFighter === "Mushroom") && (playerAnimation === "static") : {playerImg=<MushIdle/>; break}
+        case (selectedFighter === "Mushroom") && (playerAnimation === "damage") : {playerImg=<MushCounter/>; break}
+        case (selectedFighter === "Skeleton") && (playerAnimation === "attack") : {playerImg=<SkeleAttack/>; break}
+        case (selectedFighter === "Skeleton") && (playerAnimation === "static") : {playerImg=<SkeleIdle/>; break}
+        case (selectedFighter === "Skeleton") && (playerAnimation === "damage") : {playerImg=<SkeleCounter/>; break}
+        default: {playerImg=<MushIdle/>; break}
     }
+    
     let opponentImg;
     switch(opponentAnimation){
         case "attack":{opponentImg=<SkeleAttack/>; break}
         case "static":{opponentImg=<SkeleIdle/>; break}
         case "damage":{opponentImg=<SkeleCounter/>; break}
+        default: {opponentImg=<SkeleIdle/>; break}
     }
 
     return(
-        <div>
+        <div className='healthBar'>
             <div id="playerSummary">
                 <HealthBar
                 main={true}

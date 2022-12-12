@@ -7,7 +7,7 @@ import Header from './components/Header/index';
 import CharacterSelect from './components/CharacterSelect/Characters';
 import BattleScreen from './components/BattleScreen/BattleScreen';
 import EndMenu from './components/Endmenu/Endmenu';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 
 import {
@@ -40,6 +40,11 @@ const client = new ApolloClient({
 });
 
 function App() {
+
+  const [fighter, setFighter] = useState('');
+  console.log(fighter);
+    // 1=Flyeye, 2=Goblin, 3=Mushroom, 4=Skeleton
+
   return (
     <ApolloProvider client={client}>
       <Router>
@@ -64,12 +69,11 @@ function App() {
               />
               <Route
                 path="/characterSelect"
-                element={<CharacterSelect />}
+                element={<CharacterSelect selectFighter={setFighter}/>}
               />
               <Route 
                 path="/battleScreen" 
-                element={<BattleScreen />}
-
+                element={<BattleScreen selectedFighter={fighter}/>}
               />
               <Route
               path="/endMenu"
