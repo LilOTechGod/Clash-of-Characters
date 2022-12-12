@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import { useMutation } from '@apollo/client';
 import { ADD_USER } from '../../utils/mutation';
+import './index.css';
 
 import Auth from '../../utils/auth';
 
@@ -39,58 +40,56 @@ const Signup = () => {
   };
 
   return (
-    <main className="">
-      <div className="">
-        <h4 className="">Sign Up</h4>
-        <div className="">
-          {data ? (
-            <p>
-              LETS PLAY!!!!{' '}
-              <Link to="/battleScreen"></Link>
-            </p>
-          ) : (
-            <form onSubmit={handleFormSubmit}>
-              <input
-                className="form-input"
-                placeholder="Your username"
-                name="username"
-                type="text"
-                value={formState.name}
-                onChange={handleChange}
-              />
-              <input
-                className="form-input"
-                placeholder="Your email"
-                name="email"
-                type="email"
-                value={formState.email}
-                onChange={handleChange}
-              />
-              <input
-                className="form-input"
-                placeholder="******"
-                name="password"
-                type="password"
-                value={formState.password}
-                onChange={handleChange}
-              />
-              <button
-                className="signup-button"
-                style={{ cursor: 'pointer' }}
-                type="submit"
-              >
-                Submit
-              </button>
-            </form>
-          )}
-
-          {error && (
-            <div>
-              {error.message}
-            </div>
-          )}
+    <main className="main-container">
+      <div className="signup-container">
+        <h4 className="signup-class">Sign Up</h4>
         </div>
-      </div>
+        {data ? (
+          <p>
+            LETS PLAY!!!!{' '}
+            <Link to="/battleScreen"></Link>
+          </p>
+        ) : (
+          <form onSubmit={handleFormSubmit}>
+            <input
+              className="form-input"
+              placeholder="Your username"
+              name="username"
+              type="text"
+              value={formState.name}
+              onChange={handleChange}
+            />
+            <input
+              className="form-input"
+              placeholder="Your email"
+              name="email"
+              type="email"
+              value={formState.email}
+              onChange={handleChange}
+            />
+            <input
+              className="form-input"
+              placeholder="******"
+              name="password"
+              type="password"
+              value={formState.password}
+              onChange={handleChange}
+            />
+            <button
+              className="signup-button"
+              style={{ cursor: 'pointer' }}
+              type="submit"
+            >
+              Submit
+            </button>
+          </form>
+        )}
+
+        {error && (
+          <div>
+            {error.message}
+          </div>
+        )}
     </main>
   );
 };

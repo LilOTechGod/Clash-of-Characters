@@ -23,3 +23,15 @@ export const ADD_USER = gql`
     }
   }
 `;
+
+// WHAT I ADDED -----------
+export const UPDATE_USER = gql`
+  mutation updateUser($username: String!, $email: String!, $password: String!) {
+    updateUser(username: $username, email: $email, password: $password) {
+      user {
+        _id
+        username
+      }
+    }
+  }
+  `;

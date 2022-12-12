@@ -8,6 +8,7 @@ import CharacterSelect from './components/CharacterSelect/Characters';
 import BattleScreen from './components/BattleScreen/BattleScreen';
 import EndMenu from './components/Endmenu/Endmenu';
 import { useState } from 'react';
+import UserUpdate from './components/UserUpdate/UserUpdate';
 
 
 import {
@@ -66,6 +67,10 @@ function App() {
               <Route 
                 path="/signup" 
                 element={<Signup />}
+              />
+               <Route 
+                path="/userUpdate" 
+                element={<UserUpdate />}
               />
               <Route
                 path="/characterSelect"
