@@ -91,3 +91,20 @@
         animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
     }
 }
+
+@media (max-width: 600px) {
+    .logInOut-container {
+        margin: 75px auto;
+    }
+    .clash-title {
+        font-size: 36px;
+      }
+    .logInOut {
+        width: 80vw;
+    }
+
+    .logInOut {
+        min-width: 250px;
+        max-width: 400px;
+    }
+}
