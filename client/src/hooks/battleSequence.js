@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-//dont have a "shared" folder yet but will need to import path from the character page with stats
 import { opponentStats, playerStats } from "../shared/characters";
 import  {onattack,onstrike} from "../utils/damage";
 import {wait} from "../utils/wait";

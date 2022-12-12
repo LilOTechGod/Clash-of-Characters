@@ -11,5 +11,16 @@
 #srtButton {
     position: sticky;
     top: 50%;
-    left: 30%;
+    left: 37%;
+    display: inline-block;
+    border-radius: 15px;
+    background-color: #835793; 
+    box-shadow: 0px 12px 16px 12px #835793, 0px 10px 50px 50px #835793;
+    color: rgb(38, 23, 43);
+    padding: 14px 40px;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    cursor: pointer;
+
+    font-size: 20px;
 }
