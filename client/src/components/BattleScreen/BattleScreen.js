@@ -60,7 +60,7 @@ export const BattleScreen=()=>{
         case "damage":{opponentImg=<SkeleCounter/>; break}
     }
     return(
-        <div>
+        <div className='healthBar'>
             <div id="playerSummary">
                 <HealthBar
                 main={true}
