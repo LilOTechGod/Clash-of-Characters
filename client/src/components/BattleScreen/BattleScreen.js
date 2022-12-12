@@ -13,7 +13,7 @@ import SkeleAttack from "../Animations/Skeleton/Attack";
 import MushCounter from "../Animations/Mushroom/Counter";
 import SkeleCounter from "../Animations/Skeleton/Counter";
 import { useNavigate } from "react-router-dom";
-
+import { textBox } from '../../hooks/battleSequence';
 
 export const BattleScreen=()=>{
     const [sequence,setSequence] = useState({});
@@ -88,7 +88,7 @@ export const BattleScreen=()=>{
 
             <div id="playerPos">{playerImg}</div>
             <div id="opponentPos">{opponentImg}</div>
-            
+            <div id="textPosition">{textBox}</div>
 
             <div id="btnPosition">
                    <button className="buttonAttack" onClick={() => setSequence({mode:'attack', turn })}>Attack</button>

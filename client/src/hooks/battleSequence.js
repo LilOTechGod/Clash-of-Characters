@@ -3,6 +3,7 @@ import { opponentStats, playerStats } from "../shared/characters";
 import  {onattack,onstrike} from "../utils/damage";
 import {wait} from "../utils/wait";
 
+export var textBox="Your Turn!";
 export const useBattleSequence = sequence => {
     const [turn, setTurn] = useState(0);
     const [inSequence, setInSequence] = useState(false);
@@ -12,8 +13,7 @@ export const useBattleSequence = sequence => {
     const [opponentAnimation, setOpponentAnimation] = useState('static');
 
     useEffect(() => {
-        const { mode, turn } = sequence;
-    
+        const { mode, turn, } = sequence;
         if (mode) {
           const attacker = turn === 0 ? playerStats : opponentStats;
           const receiver = turn === 0 ? opponentStats : playerStats;
@@ -23,9 +23,11 @@ export const useBattleSequence = sequence => {
               const damage = onattack({ attacker, receiver });
               (async () => {
                 setInSequence(true);
+                textBox="You chose ATTACK!"
               turn === 0
               ? setPlayerAnimation('attack')
               : setOpponentAnimation('attack');
+
              await wait(100);
 
              turn === 0
@@ -57,6 +59,7 @@ export const useBattleSequence = sequence => {
                 const damage = onstrike({ attacker, receiver });
                 (async () => {
                   setInSequence(true);
+                  textBox="You chose STRIKE!"
                 turn === 0
                 ? setPlayerAnimation('attack')
                 : setOpponentAnimation('attack');
@@ -80,6 +83,10 @@ export const useBattleSequence = sequence => {
                 ? setOpponentHealth(h => (h - damage > 0 ? h - damage : 0))
                 : setPlayerHealth(h => (h - damage > 0 ? h - damage : 0)); 
               await wait(2500);
+
+              textBox="Enemy's Turn!"
+              await wait(1500);
+
               setTurn(turn === 0 ? 1 : 0);
               setInSequence(false);
                 })();
