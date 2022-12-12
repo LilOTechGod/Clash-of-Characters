@@ -64,11 +64,11 @@ Special thanks to Leah, Ian, Negin, and Diem for keeping us afloat through the b
 ## Collaborations
 This project was made possible by the hard work of the following contributors, with links to each of their respective GitHubs:
 
-* [Oscar Perez](github.com/LilOTechGod)
-* [Brandon Knight](github.com/blksmk8483)
-* [Jimmy Huang](github.com/jimmehhuang)
-* [David Garcia](github.com/parradavid300)
-* [Casey Myers](github.com/BriefCasey)
+* [Oscar Perez](https://github.com/LilOTechGod)
+* [Brandon Knight](https://github.com/blksmk8483)
+* [Jimmy Huang](https://github.com/jimmehhuang)
+* [David Garcia](https://github.com/parradavid300)
+* [Casey Myers](https://github.com/BriefCasey)
 
 ## Contact
 If you have any additional questions, feel free to reach out via any of the above links! Happy fighting!
