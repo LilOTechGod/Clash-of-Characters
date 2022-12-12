@@ -29,28 +29,28 @@ Click [HERE](google.com) to play!
 
 On entry, the main screen will ask players to login or signup to create an account. Currently, this allows players to track their wins.
 
-(main screen pic)
+![mainscreen](https://user-images.githubusercontent.com/113392613/207136243-2b182c8a-3c73-4f0e-9fc1-900230a5a2d6.png)
 
 Signing up for an account requires a username, email, and password of minimum length 5 characters.
 
-(Signup screen pic)
+![signupscreen](https://user-images.githubusercontent.com/113392613/207136269-52d511a9-f80c-442e-ae10-b9be6ef86679.png)
 
 Once logged in, players will be given a selection of different fighters to choose from.
 
-(Char select pic)
+![charselect](https://user-images.githubusercontent.com/113392613/207136297-fa26402d-5813-4fc1-acbb-0857f8c73b2e.png)
 
 Pick any of them! For the purposes of this initial game draft, we have 4 characters to start with.
 Clicking any of the buttons will open up the fight screen and display the player-selected character along with an AI opponent.
 
-(fight screen)
+![fightscreen](https://user-images.githubusercontent.com/113392613/207136315-2b601087-cdac-4dff-8558-cd97cee7c172.png)
 
 For this initial demo, players have 2 possible attacks: Fight or Strike. Choose wisely! The player and the AI will take turns attacking each other until one is defeated. The damage done to either the player or the AI will reflect in the health bars at the top of the page.
 
-(attack screen)
+![attackscreen](https://user-images.githubusercontent.com/113392613/207136333-f256b336-5896-496d-86e5-388166db29fc.png)
 
 Once the game ends, players will be given the option to either choose a new character, fight again, or end the game.
 
-(end screen)
+![endscreen](https://user-images.githubusercontent.com/113392613/207136352-db9b51b0-0af5-4f2d-bbea-327cb79ed846.png)
 
 ## Credits
 Sprites were obtained from https://luizmelo.itch.io/monsters-creatures-fantasy. 
