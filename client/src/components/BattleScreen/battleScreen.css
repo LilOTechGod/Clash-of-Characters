@@ -1,4 +1,4 @@
-.container {
+/* .container {
     margin: 20px auto;
     width:700px;
     height:400px;
@@ -7,6 +7,73 @@
     grid-row: auto auto;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
+} */
+
+#body{
+    height: 50%;
+    display: grid;
+    grid-template-columns: 4;
+    grid-template-rows: 1;
+}
+
+.healthBar {
+    /* display: flex; */
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: span 2;
+    height: auto;    
+}
+
+#playerSummary{
+    float: left;
+}
+#opponentSummary{
+    float:right;
+}
+
+#characterContainer{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url('../../assets/fightingBackgrounds/vibrantPark.gif');
+    background-repeat: no-repeat;
+}
+
+#playerPos{   
+    position: relative;
+    left: 20%;
+    width:250px;
+    height:250px;
+    display:inline-block;
+}
+
+#opponentPos{
+    position: relative;
+    right: -20%;
+    width:250px;
+    height:250px;
+    display:inline-block;
+    transform: scaleX(-1);
+}
+
+#textPosition{
+    background-color: white;
+    border-radius: 5px;
+    font-size: 32px;
+    position:absolute;
+    left:45%;
+    bottom: 30%;
+}
+
+#btnPosition{
+    position: absolute;
+    z-index: 2;
+    bottom: 20%;
+    left:39%;
+
 }
 
 .buttonAttack {
