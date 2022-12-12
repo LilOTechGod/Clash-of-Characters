@@ -44,7 +44,7 @@ export const flyEyeStats = {
   };
   export const playerStats  = {
     level: 44,
-    name: 'Skeleton',
+    name: 'player',
     maxHealth: 180,
     img: '',
   

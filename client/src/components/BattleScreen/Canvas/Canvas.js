@@ -3,7 +3,7 @@ import './canvas.css'
 
 export const Canvas =() => {
 return(
-    <div className='flexBattle'>
+    <div>
         <canvas></canvas>
     </div>
 )

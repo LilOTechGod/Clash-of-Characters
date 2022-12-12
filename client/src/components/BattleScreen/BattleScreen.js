@@ -1,5 +1,5 @@
 import './battleScreen.css';
-import Canvas from "./Canvas/Canvas"
+import "./Canvas/canvas.css"
 import HealthBar from './HealthBar/HealthBar';
 import  useAIOpponent from '../../hooks/aiOpponent';
 import useBattleSequence from "../../hooks/battleSequence";
@@ -55,7 +55,7 @@ export const BattleScreen=({selectedFighter})=>{
         }, [playerHealth, opponentHealth,onGameEnd]);
 
     let playerImg;
-    console.log({selectedFighter});
+    // console.log({selectedFighter});
     switch (true) {
         case (selectedFighter === "Flyeye") && (playerAnimation === "attack") : {playerImg=<FlyAttack/>; break}
         case (selectedFighter === "Flyeye") && (playerAnimation === "static") : {playerImg=<FlyIdle/>; break}
@@ -81,6 +81,7 @@ export const BattleScreen=({selectedFighter})=>{
     }
 
     return(
+        <div id="body">
         <div className='healthBar'>
             <div id="playerSummary">
                 <HealthBar
@@ -88,7 +89,7 @@ export const BattleScreen=({selectedFighter})=>{
                 health={playerHealth}
                 maxHealth={playerStats.maxHealth}
                 label={"health"}
-                name={playerStats.name}
+                name={selectedFighter}
                 level={playerStats.level}
                 />
             </div>
@@ -102,17 +103,19 @@ export const BattleScreen=({selectedFighter})=>{
                 level={opponentStats.level}
                 />
             </div>
-
-            <Canvas/>
-
-            <div id="playerPos">{playerImg}</div>
-            <div id="opponentPos">{opponentImg}</div>
+        </div>
+            <canvas>
+            </canvas>
+            <div id="characterContainer">
+                <div id="playerPos">{playerImg}</div>
+                <div id="opponentPos">{opponentImg}</div>
+            </div>
             <div id="textPosition">{textBox}</div>
 
             <div id="btnPosition">
                    <button className="buttonAttack" onClick={() => setSequence({mode:'attack', turn })}>Attack</button>
-                    <button className="buttonDefend" onClick={() => console.log("Defend")}>Defend</button>
-                    <button className="buttonDefend" onClick={() => console.log("Counter")}>Counter</button>
+                    {/* <button className="buttonDefend" onClick={() => console.log("Defend")}>Defend</button>
+                    <button className="buttonDefend" onClick={() => console.log("Counter")}>Counter</button> */}
                   <button className="buttonAttack" onClick={() => setSequence({mode:'strike', turn })}>Strike</button>
 
            </div>

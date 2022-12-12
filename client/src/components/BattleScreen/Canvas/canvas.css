@@ -1,12 +1,7 @@
 canvas{
-    width: 100vw;
-    height: 100vh;
+width:768px;
+height:256px;
     background-image: url(../../../assets/fightingBackgrounds/vibrantPark.gif);
-    background-repeat: no-repeat;
-    background-size: contain;
+
 }
 
-flexBattle {
-    display: flex;
-    flex-wrap: wrap;
-}
