@@ -34,6 +34,19 @@ userSchema.methods.isCorrectPassword = async function (password) {
   return bcrypt.compare(password, this.password);
 };
 
+// THIS IS WHAT I ADDED TO UPDATE A USER.....
+
+// Add a new method for updating a user's account information
+userSchema.methods.updateAccount = async function (new_username, new_email, new_password) {
+  // Update the user's information with the new values
+  this.username = new_username;
+  this.email = new_email;
+  this.password = new_password;
+
+  // Save the updated user information to the database
+  await this.save();
+};
+
 const User = model('User', userSchema);
 
 module.exports = User;
