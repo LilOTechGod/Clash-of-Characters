@@ -29,6 +29,13 @@
         border: 1px solid rgb(4, 4, 4);
     }
 
-    /* .endFlyIdle {
-       
-    } */
+    .endFlyIdle {
+       height: 50px;
+    }
+
+    .flyChar {
+        height: 50px;
+        position: relative;
+        right: 509px;
+        bottom: 170px;
+    }

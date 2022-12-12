@@ -1,0 +1,27 @@
+.login_style {
+    text-align: center;
+    font-size: xxx-large;
+    padding-top: 73px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: cursive;
+}
+
+.container {
+    background-color: grey;
+}
+
+#form_style {
+    display: grid;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lname {
+   width: 700px;
+}
