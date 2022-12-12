@@ -9,7 +9,7 @@
 }
 
 .clash-title {
-    font-family: "Alfa Slab One", cursive;
+    font-family: 'Press Start 2P', cursive;
     text-align: left;
     font-size: 74px;
     letter-spacing: 4px;
@@ -23,7 +23,8 @@
 }
 
 .logInOut {
-    font-family: "Alfa Slab One", cursive;
+    /* font-family: "Alfa Slab One", cursive; */
+    font-family: 'Press Start 2P', cursive;
     display: flex;
     border: 1px solid #fff;
     background-color: rgba(194, 63, 238, 0.93);

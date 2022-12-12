@@ -29,10 +29,13 @@
   .health {
     background-color: #0566fa;
     transition: 0.35s;
+    /* font-family: 'Press Start 2P', cursive; */
+    
   }
   .info {
     display: flex;
     font-family: cursive;
+    /* font-family: 'Press Start 2P', cursive; */
     font-style: oblique;
     gap: 24px
   }
