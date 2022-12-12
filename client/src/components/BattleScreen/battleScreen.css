@@ -8,12 +8,12 @@
     grid-column-gap: 20px;
     grid-row-gap: 20px;
 }
-Canvas{
+/* Canvas{
     position: absolute;
     z-index: 2;
     top: 150px;
     left:550px;
-}
+} */
 
 .buttonAttack {
     border:0px;
@@ -47,36 +47,38 @@ Canvas{
     background-color:rgb(0,0,255,0.8)
 
 }
+
+.healthBar {
+    display: flex;
+    flex-wrap: wrap;
+    height: 60px;
+}
+
 #playerSummary{
-    position: absolute;
-    z-index: 4;
-    top: 150px;
-    left:550px;
+    width: 50%
 }
 #opponentSummary{
-    position: absolute;
-    z-index: 4;
-    top: 150px;
-    left:1000px;
+    width: 50%
 }
+
 #btnPosition{
     position: absolute;
     z-index: 2;
-    top:500px;
-    left:550px;
+    top: 620px;
+    left: 420px;
+    height: 0px;
 }
 #playerPos{
     position: absolute;
     z-index: 2;
-    top: 200px;
-    left:625px;
-    
+    left: 411px;
+    bottom: 101px;
 }
-#opponentPos{
-    position: absolute;
-    z-index: 2;
 
-    top: 200px;
-    left:900px;
+#opponentPos{
+    position: relative;
+    z-index: 2;
+    bottom: 454px;
+    left: 48%;
     transform: scaleX(-1);
 }

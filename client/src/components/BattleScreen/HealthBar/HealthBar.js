@@ -3,8 +3,7 @@ import './healthBar.css'
 
 export const HealthBar =({main=false,health,maxHealth,label,name,level}) => {
 return(
-  <div
-    className="main"
+  <div className="main"
     style={{ backgroundColor: main ? "#ADD8E6" : "#CF2734" }}
   >
     <div className="info">
@@ -13,7 +12,7 @@ return(
     </div>
 
     <div className="health">
-    <div className="main">
+    <div className="">
         <div className="label">{label}</div>
         <div className="max">
           <div
