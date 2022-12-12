@@ -52,6 +52,8 @@ Once the game ends, players will be given the option to either choose a new char
 
 ![endscreen](https://user-images.githubusercontent.com/113392613/207136352-db9b51b0-0af5-4f2d-bbea-327cb79ed846.png)
 
+Thanks for playing!
+
 ## Credits
 Sprites were obtained from https://luizmelo.itch.io/monsters-creatures-fantasy. 
 
