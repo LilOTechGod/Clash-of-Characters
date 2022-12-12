@@ -81,7 +81,7 @@ export const BattleScreen=({selectedFighter})=>{
     }
 
     return(
-        <div id="body">
+    <div id="body">
         <div className='healthBar'>
             <div id="playerSummary">
                 <HealthBar
@@ -103,9 +103,7 @@ export const BattleScreen=({selectedFighter})=>{
                 level={opponentStats.level}
                 />
             </div>
-        </div>
-            <canvas>
-            </canvas>
+        </div>            
             <div id="characterContainer">
                 <div id="playerPos">{playerImg}</div>
                 <div id="opponentPos">{opponentImg}</div>
@@ -117,10 +115,9 @@ export const BattleScreen=({selectedFighter})=>{
                     {/* <button className="buttonDefend" onClick={() => console.log("Defend")}>Defend</button>
                     <button className="buttonDefend" onClick={() => console.log("Counter")}>Counter</button> */}
                   <button className="buttonAttack" onClick={() => setSequence({mode:'strike', turn })}>Strike</button>
-
            </div>
-
-        </div>);
+        </div>
+    );
 }
 
 export default BattleScreen;
