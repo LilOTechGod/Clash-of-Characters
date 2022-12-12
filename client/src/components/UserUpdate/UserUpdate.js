@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
-import { LOGIN_USER } from '../../utils/mutation';
-import './index.css';
+import { UPDATE_USER } from '../../utils/mutation';
 
 import Auth from '../../utils/auth';
 
-const Login = (props) => {
-  const [formState, setFormState] = useState({ email: '', password: '' });
-  const [login, { error, data }] = useMutation(LOGIN_USER);
+const UserUpdate = (props) => {
+  const [formState, setFormState] = useState({
+    email: '',
+    password: '',
+  });
+  const [updateUser, { error, data }] = useMutation(UPDATE_USER);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -22,10 +24,14 @@ const Login = (props) => {
 
   const handleFormSubmit = async (event) => {
     event.preventDefault();
-    console.log(formState);
+
     try {
-      const { data } = await login({
-        variables: { ...formState },
+     
+      const { data } = await updateUser({
+        variables: {
+          email: formState.email,
+          password: formState.password,
+        },
       });
 
       Auth.login(data.login.token);
@@ -40,10 +46,10 @@ const Login = (props) => {
   };
 
   return (
-    <main className="main-container">
-        <div className="login-container">
-        <h4 className="login-class">Login</h4>
-        </div>
+    <main className="">
+      <div className="">
+        <h4 className="">UserUpdate</h4>
+        <div className="">
           {data ? (
             <p>
               LETS PLAY!!!!{' '}
@@ -82,9 +88,10 @@ const Login = (props) => {
               {error.message}
             </div>
           )}
-      
+        </div>
+      </div>
     </main>
   );
 };
 
-export default Login;
+export default UserUpdate;
