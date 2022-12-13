@@ -25,7 +25,7 @@ Run from the root folder using `npm run start`.
 
 ## Gameplay
 
-Click [HERE](google.com) to play!
+Click [here](https://clash-of-characters.herokuapp.com/) to play!
 
 On entry, the main screen will ask players to login or signup to create an account. Currently, this allows players to track their wins.
 
